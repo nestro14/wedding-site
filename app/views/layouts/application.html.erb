@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NcRcWeddingSite</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" %>
+    <%= stylesheet_link_tag href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Pacifico", 'application.css'%>
+    <%= stylesheet_link_tag href="https://fonts.googleapis.com/css?family=Montserrat" %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script src="js/libs/jquery.countdown.min.js"></script>    
+
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

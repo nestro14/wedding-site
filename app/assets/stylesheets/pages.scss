@@ -1,0 +1,454 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@font-face {
+    font-family: Rachella;
+    src: url(fonts/Rachella.ttf);
+}
+@font-face {
+    font-family: Andara;
+    src: url(fonts/Andara.ttf);
+}
+
+body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+.title-font {
+    font-size: 275%;
+    color: #ffffff;
+    line-height: 1.3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Pacifico", sans-serif;
+  letter-spacing: 2px;
+  font-weight: normal;
+  margin: 20px 0 10px 0;
+  letter-spacing: 3px;
+}
+
+.h4 {
+    color:azure;
+}
+  .bg-1 {
+      /* The image used */
+    background-image: url("capitan.jpg");
+
+    /* Full height */
+    height: 650px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Rachella;
+  }
+  .bg-2 {
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 {
+      background-color: #ffffff; /* White */
+      color: #555555;
+      font-family: sans-serif,fantasy;
+  }
+  .bg-4 {
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+
+ .bg-5 {
+      background-color: #ffffff; /* White */
+      color: #555555;
+      width: 100%;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+
+  .map-img{
+    width:100%;
+  }
+
+  .happy-face-img {
+    // align:middle;
+    height:20px;
+  }
+
+#countdown{
+  background-image: url("yosemite.jpg");
+//   background-color: #1abc9c;
+}
+
+// PARALAX
+.my-parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+    position: relative;
+    height: 700px;
+  }
+  
+  .height400 {
+    height: 400px;
+  }
+  
+  .height500 {
+    height: 500px;
+  }
+  
+  .height600 {
+    height: 600px;
+  }
+
+.height100vh {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  .my-parallax p {
+    margin: 30px 0;
+  }
+  
+  .my-parallax-overlay:before {
+    top: 0;
+    left: 0;
+    content: " ";
+    background-image: url("yosemite.jpg");
+    position: absolute;
+    height: 6px;
+    width: 100%;
+  }
+  
+  .my-parallax-overlay:after {
+    bottom: 0;
+    left: 0;
+    content: " ";
+    background-image: url("yosemite.jpg");
+    position: absolute;
+    height: 6px;
+    width: 100%;
+  }
+  
+  .decor-none .my-parallax-overlay:before {
+    background-image: none;
+  }
+  
+  .decor-none .my-parallax-overlay:after {
+    background-image: none;
+  }
+  
+  .my-parallax-overlay, .dark-overlay {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .top-margin h3 {
+    margin-top: 120px;
+  }
+  
+  .alignment {
+    position: absolute;
+    display: table;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .center-middle {
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  .v-align {
+    display: table-cell;
+  }
+  
+  .bottom-parallax {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 30px 0;
+  }
+  
+  .bottom-parallax .text-center p {
+    margin: 20px 0 0 0;
+  }
+
+  .my-parallax {
+    color: #fff;
+  }
+  
+  .my-parallax h1, .my-parallax h2, .my-parallax h3, .my-parallax h4, .my-parallax h5, .my-parallax h6 {
+    color: #fff;
+  }
+  
+  .my-parallax-overlay, .footer-background-overlay {
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+  
+  .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+  
+  .bottom-border {
+    border-bottom: 3px solid #f5c21b;
+  }
+
+/** COUNTDOWN **/
+#getting-countdown {
+    text-align: center;
+  }
+  
+  .countdown-num {
+    display: inline-block;
+    margin: 10px 20px;
+  }
+  
+  .countdown-num span {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    font-size: 34px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 2;
+    font-family: "Pacifico", sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  .countdown-num p {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 5px;
+  }
+
+.countdown-num span {
+    border: 3px solid #f5c21b;
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+
+  .countdown-num {
+    display: inline-block;
+    margin: 0px 4px;
+  }
+
+  @media (max-width: 768px) {
+  .countdown-num span {
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 2;
+    font-family: "Pacifico", sans-serif;
+  }
+
+  .countdown-num p {
+    font-size: 11px;
+  }
+}
+
+// FOOTER
+
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px; 
+}
+
+//** MEDIA QUERIES **//
+
+@media (max-width: 768px) {
+    h1 {
+      font-size: 34px;
+    }
+  
+    h2 {
+      font-size: 30px !important;
+    }
+  
+    h3 {
+      font-size: 28px;
+    }
+  
+    h4 {
+      font-size: 24px;
+    }
+  
+    h5 {
+      font-size: 20px;
+    }
+  
+    h6 {
+      font-size: 18px;
+    }
+  
+    .top-desription {
+      position: absolute;
+      width: 100%;
+    }
+  
+    .countdown-num {
+      display: inline-block;
+      margin: 0px 4px;
+    }
+  
+    .countdown-num span {
+      width: 55px;
+      height: 55px;
+      display: inline-block;
+      font-size: 20px;
+      margin-bottom: 10px;
+      border-radius: 50%;
+      font-weight: bold;
+      line-height: 2;
+      font-family: "Pacifico", sans-serif;
+    }
+  
+    .countdown-num p {
+      font-size: 11px;
+    }
+  
+    .icon-item p.icon-title {
+      margin: 0;
+    }
+  
+    .icon-item-border {
+      border-right: none;
+    }
+  
+    footer.bottom .text-left, footer.bottom .text-right {
+      text-align: center;
+      margin: 10px 0;
+    }
+  
+    .scrollup {
+      bottom: 20px;
+      right: 10px;
+    }
+  
+    .icon-item i, .bottom-parallax {
+      display: none;
+    }
+  
+    .icon-item-top {
+      margin-top: 10px;
+    }
+  
+    .blog-single-sidebar {
+      text-align: center;
+    }
+  
+    form.searchform input {
+      float: none;
+    }
+  }
+  /** MEDIA MAX WIDTH 992px **/
+  @media (max-width: 992px) {
+    .top-desription {
+      display: none;
+    }
+  
+    .navbar-header {
+      display: inline-block;
+      float: none !important;
+    }
+  
+    .navbar-toggle {
+      display: block;
+      margin: 10px 0 0 0;
+    }
+  
+    .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+  
+    .navbar-collapse.collapse {
+      display: none!important;
+    }
+  
+    .navbar-nav {
+      float: none!important;
+      margin: 0;
+    }
+  
+    .navbar-nav > li {
+      float: none;
+      margin: 20px 0 0;
+    }
+  
+    .navbar-nav > li > a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-bottom: 1px !important;
+    }
+  
+    .theme-dropdown {
+      margin-bottom: 8px;
+    }
+  
+    .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+      background: transparent;
+    }
+  
+    .navbar-text {
+      float: none;
+      margin: 15px 0;
+    }
+  
+    .navbar-collapse.collapse.in {
+      display: block!important;
+    }
+  
+    .collapsing {
+      overflow: hidden!important;
+    }
+  
+    .logo-div {
+      display: none;
+    }
+  
+    .navbar-nav .open .dropdown-menu > li {
+      border: none;
+    }
+  
+    .navbar-nav .open .dropdown-menu > li > a {
+      text-align: center;
+    }
+  
+    h1, h2, h3, h4, h5, h6, .page-icons-right, .page-icons-left {
+      text-align: center;
+    }
+  
+    .icon-item-border {
+      border-right: none;
+    }
+  }
+  /** MEDIA MAX WIDTH 1200px **/
+  
