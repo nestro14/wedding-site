@@ -28,10 +28,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#the_wedding">The wedding</a></li>
+        <li><a href="#the_wedding">The Wedding</a></li>
         <li><a href="#the_proposal">The Proposal</a></li>
         <li><a href="#accommodations">Accommodations</a></li>
-        <li><a href="#registry">The Registry</a></li>
+        <li><a href="#fun_things_to_do">Fun Things To Do</a></li>
         <li><a href="#rsvp">RSVP</a></li>
       </ul>
     </div>
@@ -51,9 +51,11 @@
           <div class="container">
             <div class="row">
               <div class="col-md-offset-2 col-md-8">
-                <h2>Don't Forget It!</h2>
+                <h1><%= link_to 'Rush Creek Lodge', 'http://www.rushcreeklodge.com', {:style=>'color:azure;', :target => "_blank"} %> </h1>
+                <h2> April 28th, 2018</h2>
+                <h2></h2>
+                <br />
 
-                <p>April 28th, 2018</p>
                 <div id="getting-countdown" class="animatefadeIn"></div>
               </div>
             </div>
@@ -64,23 +66,23 @@
 </div>
 
 <!-- Third Container -->
-<div id="the_wedding" class="container-fluid bg-2 text-center">
+<div id="the_wedding" class="container-fluid bg-2 ">
   <div class="col-md-6 col-md-offset-3">
-  <h3 class="margin" style="color:azure;">The Wedding</h3>
-    <p>Both our ceremony and reception will take place at the Rush Creek Lodge at Yosemite. Because the lodge is 3-3.5hrs away from San Francisco, and the drive can be dangerous at night, we suggest that you join us at the Lodge on Friday April 27th 2018, the day before the wedding. You are welcome to join us the day of the wedding, but we caution against driving back to the Bay Area at night. Refer to the accommodations section for directions to the lodge and room reservations. Refer to things to do for fun activities for your stay at the lodge.</p>
+  <h3 class="margin">The Wedding</h3>
+    <p>The drive can be dangerous at night, so we suggest that you join us at the Lodge on Friday April 27th 2018. You are welcome to join us the day of the wedding, but we caution against driving back to the Bay Area at night. Refer to the accommodations section for directions to the lodge and room reservations. Refer to things to do for fun activities for your stay at the lodge.</p>
 
-    <h4 style="color:azure;">The Ceremony</h4>
-    <p>Please join us on April 28th 2018 at the Rush Creek Lodge ceremony area in the woods from 4:00PM-4:30PM. The ceremony area is a 10 minute walk from the Rush Creek Lodge’s lobby. Wear comfortable shoes if necessary.</p>
+    <h4>The Ceremony</h4>
+    <p>Please join us April 28th 2018 at the Rush Creek Lodge in the woods. The ceremony area is a 10 minute walk from lobby. Wear comfortable shoes. Please meet at the lobby 30 minutes before the ceremony time.</p>
 
-    <h4 style="color:azure;">The Reception</h4>
-    <p>Cocktail hour will take place after the ceremony at the outside patio of the Event Hall at the Lodge. Enjoy h'orderves, drinks, and s’mores while you catch up with our friends and family. Dinner will take place immediately after the cocktail hour. The rest of the night, we will share our day together with an estimated end time of 10:00PM.</p>
+    <h4>The Reception</h4>
+    <p>Cocktail hour will take place after the ceremony at the outside patio of the Event Hall at the Lodge. Enjoy h'orderves, drinks, and s’mores while you catch up with our friends and family. Dinner will take place immediately after the cocktail hour.</p>
 
-    <%= image_tag "wedding_map.jpg", :class => "map-img" %>
+    <%= image_tag "wedding_map.png", :class => "map-img" %>
     </div>
 </div>
 
 <!-- Forth Container (Grid) -->
-<div id="the_proposal" class="row container-fluid bg-3 text-center">
+<div id="the_proposal" class="row container-fluid bg-3 ">
   <div class="col-md-6 col-md-offset-3">
   <h1 class="margin">The Proposal</h1>
   <p>Nestor proposed on a Sunday morning during a weekend family trip to Yosemite. We had dated for 6 years and I was expecting him to pop the question any day now. I had mentioned to Nestor that when he proposed, I would like to have my loved ones present. With my mom and my sister with us, this trip was the perfect moment to do it. On Saturday morning we took a tour from Yosemite valley to Glacier point. Glacier point is one of the most beautiful places I have ever seen in my life, at an elevation of 7,214 feet(2,199 m) according to Wikipedia. It reminded me of the pixar movie “Up.” Such a romantic place to be engaged! “My mom and Jackie are here. If he’s going to propose, this is the perfect moment, I thought.” But he didn’t.</p>
@@ -104,27 +106,65 @@
 
 <!-- Fifth Container -->
 <div id="accommodations" class="container-fluid bg-2 text-center">
-  <h1 class="margin" style="color:azure;">Accommodations</h1>
+  <h1 class="margin" style="color:#FFF;">Accommodations</h1>
+
+  <div class="card-columns">
+    <div class="card" style="width: 30rem;">
+      <%= image_tag "Rush-Creek-Lodge-Wedding-Yosemite-CA.jpg", :class => "map-img" %>
+      <div class="card-body">
+        <h4 class="card-title">Rush Creek Lodge</h4>
+        <p class="card-text">Bride and Groom will be staying at the Rush Creek Lodge.</p>
+        <a href="http://www.rushcreeklodge.com" class="btn btn-primary">Visit Site</a>
+        <%= link_to "Booking Instructions", "/booking_instructions.pdf", :class => "card-link btn btn-primary" %>
+      </div>
+    </div>
+    <div class="card" style="width: 30rem; margin-top: 20px; margin-bottom: 20px;">
+      <%= image_tag "airbnb.jpg", :class => "map-img" %>
+      <div class="card-body">
+        <h4 class="card-title">Airbnb</h4>
+        <p class="card-text">Cheaper option for large groups.</p>
+        <a href="https://www.airbnb.com" class="btn btn-primary">Visit Site</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="map-img">
+    <h3 class="margin">Directions from SF to the Rush Creek</h3>
+    <iframe style="border: 0px currentColor;" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1611540.1545597466!2d-122.10370655391378!3d37.9178282341375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8096dc0812ab59cb%3A0x584ff9f1f59784ef!2sRush+Creek+Lodge+at+Yosemite%2C+California+120%2C+Groveland%2C+CA!3m2!1d37.8135094!2d-119.8800771!4m5!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA!3m2!1d37.7749295!2d-122.4194155!5e0!3m2!1sen!2sus!4v1440632897900" frameborder="0"></iframe>
+  </div>
+
 </div>
 
-
-
 <!-- Sixth Container RSVP-->
-<div id="rsvp" class="row container-fluid bg-5">
+<div id="fun_things_to_do" class="row container-fluid bg-5">
   <div class="col-md-6 col-md-offset-3">
-    <h1 class="margin text-center">R.S.V.P</h1>
-    <form>
-      <div class="form-group">
-        <label for="name1">Your Name</label>
-        <input type="text" class="form-control" id="name1" placeholder="Enter Name">
+    <h1 class="margin text-center">Fun Things To Do</h1>
+    <div>
+      <h3>Visit Yosemite!</h3>
+      <p>April is the best month to see all the waterfalls! And you may even be able to enjoy the snow!</p>
+      <%= image_tag "water_fall.jpg", :class => "std-img" %>
+    </div>
+    <%= link_to "Yosemite National Park", 'https://www.nps.gov/yose/planyourvisit/april.htm', {:class => 'btn btn-primary btn-center', :target => "_blank"} %>
+      <div>
+        <h1>Enjoy the Rush Creek Resort!</h1>
+        <h3>Play games on the poolside terrace</h3>
+        <%= image_tag "games.jpg", :class => "std-img" %>
       </div>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      <div>
+        <h3>Hang out with friends at the pool</h3>
+        <%= image_tag "pool.jpg", :class => "std-img" %>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+      <div>
+        <h3>Have s’mores every night by the fireplace</h3>
+        <%= image_tag "smores.jpg", :class => "std-img" %>
+      </div>
+  </div>
+</div>
+
+<!-- Seventh Container RSVP-->
+<div id="rsvp" class="row container-fluid bg-2">
+  <div class="col-md-6 col-md-offset-3">
+    <h1 class="margin text-center">R.S.V.P Comming Soon...</h1>
   </div>
 </div>
 
@@ -135,4 +175,3 @@
 
 </body>
 </html>
-
