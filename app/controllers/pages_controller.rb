@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+http_basic_authenticate_with name: 'guest', password: 'ceron'
+
   def index
   end
 
