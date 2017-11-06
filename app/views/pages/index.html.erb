@@ -28,10 +28,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#the_wedding">The wedding</a></li>
+        <li><a href="#the_wedding">The Wedding</a></li>
         <li><a href="#the_proposal">The Proposal</a></li>
         <li><a href="#accommodations">Accommodations</a></li>
-        <li><a href="#registry">The Registry</a></li>
+        <li><a href="#fun_things_to_do">Fun Things To Do</a></li>
         <li><a href="#rsvp">RSVP</a></li>
       </ul>
     </div>
@@ -135,9 +135,34 @@
 
 </div>
 
-
 <!-- Sixth Container RSVP-->
-<div id="rsvp" class="row container-fluid bg-5">
+<div id="fun_things_to_do" class="row container-fluid bg-5">
+  <div class="col-md-6 col-md-offset-3">
+    <h1 class="margin text-center">Fun Things To Do</h1>
+    <div>
+      <h3>Visit Yosemite!</h3>
+      <p>April is the best month to see all the waterfalls! And you may even be able to enjoy the snow!</p>
+      <%= image_tag "water_fall.jpg", :class => "std-img" %>
+    </div>
+    <%= link_to "Yosemite National Park", 'https://www.nps.gov/yose/planyourvisit/april.htm', {:class => 'btn btn-primary btn-center', :target => "_blank"} %>
+      <div>
+        <h1>Enjoy the Rush Creek Resort!</h1>
+        <h3>Play games on the poolside terrace</h3>
+        <%= image_tag "games.jpg", :class => "std-img" %>
+      </div>
+      <div>
+        <h3>Hang out with friends at the pool</h3>
+        <%= image_tag "pool.jpg", :class => "std-img" %>
+      </div>
+      <div>
+        <h3>Have s’mores every night by the fireplace</h3>
+        <%= image_tag "smores.jpg", :class => "std-img" %>
+      </div>
+  </div>
+</div>
+
+<!-- Seventh Container RSVP-->
+<div id="rsvp" class="row container-fluid bg-2">
   <div class="col-md-6 col-md-offset-3">
     <h1 class="margin text-center">R.S.V.P Comming Soon...</h1>
   </div>
