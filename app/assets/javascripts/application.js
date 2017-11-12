@@ -19,6 +19,6 @@
 
 $(document).on('turbolinks:load', function() {
     $('#getting-countdown').countdown('2018/04/28', function(event) {
-        $(this).html(event.strftime('<div class="countdown-num"><span>%w</span><p>weeks</p></div><div class="countdown-num"><span>%d</span><p>days</p></div><div class="countdown-num"><span>%H</span><p>hours</p></div><div class="countdown-num"><span>%M</span><p>minuts</p></div><div class="countdown-num"><span>%S</span><p>seconds</p></div>'));
+        $(this).html(event.strftime('<div class="countdown-num"><span>%w</span><p>weeks</p></div><div class="countdown-num"><span>%d</span><p>days</p></div><div class="countdown-num"><span>%H</span><p>hours</p></div><div class="countdown-num"><span>%M</span><p>minutes</p></div><div class="countdown-num"><span>%S</span><p>seconds</p></div>'));
     });
   });
