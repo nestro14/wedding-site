@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
    }
 
   .std-img{
-    max-width: 100%;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -383,12 +383,6 @@ h1, h2, h3, h4, h5, h6 {
       float: none;
     }
 
-    .std-img{
-      max-width: 315px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
   }
   /** MEDIA MAX WIDTH 992px **/
   @media (max-width: 992px) {
